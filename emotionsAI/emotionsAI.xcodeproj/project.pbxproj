@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		409FDE1827EF939B00A09F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE1727EF939B00A09F49 /* AppDelegate.swift */; };
 		409FDE1A27EF939B00A09F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE1927EF939B00A09F49 /* SceneDelegate.swift */; };
-		409FDE1C27EF939B00A09F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE1B27EF939B00A09F49 /* ViewController.swift */; };
+		409FDE1C27EF939B00A09F49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE1B27EF939B00A09F49 /* MainViewController.swift */; };
 		409FDE1F27EF939B00A09F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409FDE1D27EF939B00A09F49 /* Main.storyboard */; };
 		409FDE2227EF939B00A09F49 /* emotionsAI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 409FDE2027EF939B00A09F49 /* emotionsAI.xcdatamodeld */; };
 		409FDE2427EF939E00A09F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409FDE2327EF939E00A09F49 /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		409FDE1427EF939B00A09F49 /* emotionsAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emotionsAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409FDE1727EF939B00A09F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409FDE1927EF939B00A09F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		409FDE1B27EF939B00A09F49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		409FDE1B27EF939B00A09F49 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		409FDE1E27EF939B00A09F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		409FDE2127EF939B00A09F49 /* emotionsAI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = emotionsAI.xcdatamodel; sourceTree = "<group>"; };
 		409FDE2327EF939E00A09F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				409FDE1727EF939B00A09F49 /* AppDelegate.swift */,
 				409FDE1927EF939B00A09F49 /* SceneDelegate.swift */,
-				409FDE1B27EF939B00A09F49 /* ViewController.swift */,
+				409FDE1B27EF939B00A09F49 /* MainViewController.swift */,
 				409FDE1D27EF939B00A09F49 /* Main.storyboard */,
 				409FDE2327EF939E00A09F49 /* Assets.xcassets */,
 				409FDE2527EF939E00A09F49 /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				409FDE1C27EF939B00A09F49 /* ViewController.swift in Sources */,
+				409FDE1C27EF939B00A09F49 /* MainViewController.swift in Sources */,
 				409FDE1827EF939B00A09F49 /* AppDelegate.swift in Sources */,
 				409FDE1A27EF939B00A09F49 /* SceneDelegate.swift in Sources */,
 				409FDE2227EF939B00A09F49 /* emotionsAI.xcdatamodeld in Sources */,

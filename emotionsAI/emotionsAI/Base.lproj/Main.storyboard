@@ -1,24 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6d8-Xm-psE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Emotions AI-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="emotionsAI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wuq-S8-CzL">
+                                <rect key="frame" x="157" y="118.5" width="100" height="99.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9ah-R6-AlL"/>
+                                    <constraint firstAttribute="height" constant="100" id="v9x-l7-ZNo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotions AI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySb-qZ-sze">
+                                <rect key="frame" x="148" y="248" width="118.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OIx-cQ-skt">
+                                <rect key="frame" x="82" y="305.5" width="250" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ERo-Lk-fsT"/>
+                                    <constraint firstAttribute="width" constant="250" id="cxY-Fv-Q18"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a English sentence:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCE-LX-zQX">
+                                <rect key="frame" x="84" y="415.5" width="246" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-tP-CUE">
+                                <rect key="frame" x="173.5" y="531.5" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDY-yV-FSW">
+                                <rect key="frame" x="67" y="466.5" width="280" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Lt3-CN-WTp"/>
+                                    <constraint firstAttribute="width" constant="280" id="P94-gz-sMb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zCE-LX-zQX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ex-fb-wfd"/>
+                            <constraint firstItem="wuq-S8-CzL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="CNm-De-LSC"/>
+                            <constraint firstItem="wuq-S8-CzL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CX7-wv-KPV"/>
+                            <constraint firstItem="ySb-qZ-sze" firstAttribute="top" secondItem="wuq-S8-CzL" secondAttribute="bottom" constant="30" id="Ipb-1q-RRK"/>
+                            <constraint firstItem="WDY-yV-FSW" firstAttribute="top" secondItem="zCE-LX-zQX" secondAttribute="bottom" constant="30" id="KWl-da-yjV"/>
+                            <constraint firstItem="zCE-LX-zQX" firstAttribute="top" secondItem="OIx-cQ-skt" secondAttribute="bottom" constant="30" id="ScL-00-Glz"/>
+                            <constraint firstItem="vCi-tP-CUE" firstAttribute="top" secondItem="WDY-yV-FSW" secondAttribute="bottom" constant="30" id="UuU-o3-0w4"/>
+                            <constraint firstItem="OIx-cQ-skt" firstAttribute="top" secondItem="ySb-qZ-sze" secondAttribute="bottom" constant="30" id="g7E-jR-Jef"/>
+                            <constraint firstItem="ySb-qZ-sze" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nhd-PL-tvg"/>
+                            <constraint firstItem="OIx-cQ-skt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVh-87-I6U"/>
+                            <constraint firstItem="vCi-tP-CUE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sra-uk-ISI"/>
+                            <constraint firstItem="WDY-yV-FSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wZF-fQ-JPI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Emotions AI" id="5b7-Q7-fnr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="77.678571428571431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIX-10-VzA">
+            <objects>
+                <viewController id="W4o-km-yNE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dxB-w7-Xdd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="04N-zK-uwV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEz-5S-9oM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1787" y="69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qqe-GR-D5n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6d8-Xm-psE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9gZ-Ap-vk5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jad-io-zJb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYz-Pe-lx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="77.678571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
